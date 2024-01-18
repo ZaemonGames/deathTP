@@ -1,22 +1,21 @@
-name: IceGuard
-version: '1.0.0'
-main: com.github.iceserverlab.IceGuard
-api-version: '1.18'
+name: deathTP
+version: '1.0'
+main: jp.zaemongames.deathtp.DeathTP
 authors: [ ZaemonGames ]
-description: アイス生活鯖のWorldGuardをGUIで操作できるプラグイン
-website: https://github.com/IceServerLab/IceGuard
+description: Teleport to death location plugin.
+website: https://github.com/ZaemonGames/deathTP
 depend:
-  - WorldGuard
+  - Vault
 
 commands:
-  iceguard:
-    description: メニューを開く
-    permission: iceguard.menu.main
-    aliases: ig
+  death:
+    description: Teleport to death location.
+    permission: deathtp.player
 
 permissions:
-  #  global
-  iceguard.*:
-    description: 全権限
-    default: op
-    children:
+  deathtp.teleport:
+    description: teleport
+    default: true
+  deathtp.free:
+    description: free teleport
+    default: false

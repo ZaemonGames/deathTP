@@ -10,11 +10,17 @@ version = "1.0"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
+    mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://jitpack.io")
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper", "paper-api", "1.20.4-R0.1-SNAPSHOT")
+    compileOnly("com.github.MilkBowl", "VaultAPI", "1.7")
+
+    implementation("com.github.hazae41", "mc-kutils", "master-SNAPSHOT")
+    implementation("me.devnatan", "inventory-framework-platform-bukkit", "3.0.2")
 }
 
 tasks {

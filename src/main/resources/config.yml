@@ -1,0 +1,28 @@
+multiplier: 2
+
+limitPerLocation: 1
+
+noPermissionMessage:
+  - "権限がありません。"
+
+deathMessage:
+  - "死にました。"
+  - "/deathでテレポートしましょう。"
+
+deathLocationNotFoundMessage:
+  - "場所が見つかりません。"
+
+# %world: 死んだワールド名
+differentWorldMessage:
+  - "死んだワールド: %worldで実行して下さい。"
+
+notEnoughBalanceMessage:
+  - "残高が足りません。"
+
+teleportedMessage:
+  - "テレポートしました。"
+
+worldName:
+  world: "オーバーワールド"
+  world_nether: "ネザーワールド"
+  world_the_end: "エンドワールド"
