@@ -1,0 +1,22 @@
+name: IceGuard
+version: '1.0.0'
+main: com.github.iceserverlab.IceGuard
+api-version: '1.18'
+authors: [ ZaemonGames ]
+description: アイス生活鯖のWorldGuardをGUIで操作できるプラグイン
+website: https://github.com/IceServerLab/IceGuard
+depend:
+  - WorldGuard
+
+commands:
+  iceguard:
+    description: メニューを開く
+    permission: iceguard.menu.main
+    aliases: ig
+
+permissions:
+  #  global
+  iceguard.*:
+    description: 全権限
+    default: op
+    children:
